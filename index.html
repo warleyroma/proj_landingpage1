@@ -610,15 +610,37 @@ img>.img-sobre {
 }
 
 /* Responsivo */
-@media (max-width: 992px) {
+@media (max-width: 1080px) {
     .maquina-title {
         font-size: 34px;
     }
 
     .maquininhas-full {
         padding: 100px 0;
-        background-position: center;
+        background-size: cover;
+        background-position: 85% center;
+        background-repeat: no-repeat;
+        padding: 140px 0;
+        position: relative;
+        color: #fff;
+        overflow: hidden;
     }
+
+ 
+    /* Overlay escuro elegante */
+.maquininhas-full::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0,0,0,0.85) 25%,
+        rgba(0,0,0,0.75) 35%,
+        rgba(0,0,0,0.4) 95%,
+        rgba(0,0,0,0.1) 120%
+    );
+}
+
 }
 
 
